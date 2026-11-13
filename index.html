@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mayuri Jadhav | Software for a climate-aware world</title>
+<meta name="description" content="Mayuri Jadhav: final-year CSE student building AI and full-stack software that makes environmental change easier to understand. SIH 2024 Grand Finalist.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<style>
+:root{--bg:#0f1a14;--ink:#e9efe4;--muted:#93a398;--line:#27382d;--accent:#d6f26b;--card:#14231a}
+@media (prefers-color-scheme:light){:root{--bg:#f4f1e8;--ink:#16261d;--muted:#5a665d;--line:#d8d3c4;--accent:#c2410c;--card:#fbf9f3}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}.serif{font-family:ui-serif,Georgia,"Times New Roman",serif}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav a{text-decoration:none;font-size:14px;color:var(--muted);margin-left:22px}nav a:hover{color:var(--accent)}
+nav .name{color:var(--ink);font-weight:600;margin:0;letter-spacing:.02em}
+.hero {
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+#ridge{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;z-index:2;padding-top:40px;pointer-events:none}.hero a{pointer-events:auto}
+.tag{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(38px,7.2vw,80px);line-height:1.04;margin:16px 0 22px;font-weight:400;letter-spacing:-.02em;max-width:880px}
+h1 em{color:var(--accent);font-style:italic}
+.sub{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:600px;margin:0 0 30px}
+.sub b{color:var(--ink);font-weight:600}
+.links a{display:inline-block;margin:0 22px 8px 0;padding-bottom:3px;border-bottom:1px solid var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.links a:hover{color:var(--accent)}
+.now{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:38px;font-size:13px;color:var(--muted)}
+.now span::before{content:"●";color:var(--accent);margin-right:8px;font-size:9px;vertical-align:2px}
+section{padding:84px 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:200px 1fr;gap:34px}
+.label{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:6px}
+h2{font-size:clamp(28px,4vw,42px);font-weight:400;margin:0 0 30px;line-height:1.15}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;transition:.25s}
+.card:hover{border-color:var(--accent);transform:translateY(-4px)}
+.num{font-size:13px;color:var(--accent)}
+.card h3{font-size:23px;font-weight:400;margin:10px 0 10px;line-height:1.25}
+.card p{margin:0 0 16px;color:var(--muted);font-size:15.5px}
+.meta{margin-top:auto;font-size:13px;color:var(--muted)}
+.meta strong{color:var(--ink);font-weight:600}
+.card a.go{margin-top:12px;font-size:14px;color:var(--accent);text-decoration:none}
+.job{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:20px}
+.job span{font-size:14px;color:var(--muted)}
+ul{margin:14px 0 0;padding-left:20px;color:var(--muted)}li{margin:8px 0}
+.honors{list-style:none;padding:0;margin:0}
+.honors li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;margin:0;border-bottom:1px solid var(--line);color:var(--ink)}
+.honors small{color:var(--muted);white-space:nowrap}
+.skills p{margin:0 0 14px;color:var(--muted)}.skills b{color:var(--ink);font-weight:600;display:inline-block;min-width:130px}
+.big{font-size:clamp(26px,5vw,52px);line-height:1.2;text-decoration:none;border-bottom:2px solid var(--accent);word-break:break-all}
+.big:hover{color:var(--accent)}
+footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media (max-width:760px){.row{grid-template-columns:1fr;gap:12px}.cards{grid-template-columns:1fr}nav a:not(.name){margin-left:14px;font-size:13px}.skills b{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="name serif" href="#top">Mayuri Jadhav</a>
+<div><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero" id="top">
+<canvas id="ridge" aria-hidden="true"></canvas>
+<div class="wrap">
+<div class="tag mono">Mayuri Jadhav · Generative AI &amp; Software Development</div>
+<h1 class="serif">Aspiring to build software that makes environmental change easier to <em>understand</em>, and act on.</h1>
+<p class="sub">Final-year CSE student at WIT Solapur, building AI and full-stack tools. <b>Smart India Hackathon 2024 Grand Finalist.</b></p>
+<div class="links"><a href="#work">See my work</a><a href="final2026.pdf">Résumé</a><a href="https://github.com/Mayurij81">GitHub</a><a href="mailto:mayurij0306@gmail.com">Say hello</a></div>
+<div class="now mono"><span>Open to internships</span><span>Solapur, Maharashtra</span><span>CGPA 9.29</span></div>
+</div>
+</header>
+
+<section id="work"><div class="wrap row">
+<div class="label mono">Selected work</div>
+<div>
+<h2 class="serif">Things I’ve built</h2>
+<div class="cards">
+
+  <article class="card">
+    <span class="num mono">01</span>
+    <h3 class="serif">Offline Multimodal RAG Chatbot</h3>
+    <p>Answers questions over images, PDFs and audio with no cloud dependency, so user data never leaves the device.</p>
+    <div class="meta">Python · Local LLMs · RAG · Vector search</div>
+  </article>
+
+  <article class="card">
+    <span class="num mono">02</span>
+    <h3 class="serif">Landfill Fire Prevention System</h3>
+    <p>Final-year project that predicts subsurface fire risk across a landfill’s grid, with an interactive dashboard and a secure API.</p>
+    <div class="meta">React · TypeScript · FastAPI · PostGIS · Docker</div>
+  </article>
+
+  <article class="card">
+    <span class="num mono">03</span>
+    <h3 class="serif">Did Diwali Change the Air?</h3>
+    <p>An interactive data-analysis project examining modelled hourly PM2.5 changes around Diwali 2026 across five Indian cities: Solapur, Pune, Mumbai, Hyderabad and Delhi.</p>
+    <div class="meta">
+      Climate Data · Environmental Analysis · Data Visualisation<br>
+      HTML · CSS · JavaScript · Chart.js · Open-Meteo API
+    </div>
+    <a class="go" href="https://diwali-aqi-git-main-mayurij0306-1498s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">Explore live project →</a>
+  </article>
+
+  <article class="card">
+    <span class="num mono">04</span>
+    <h3 class="serif">FinanceGURU</h3>
+    <p>Personalised Indian financial-planning chatbot giving age- and goal-based advice using retrieval-augmented generation.</p>
+    <div class="meta">
+      <strong>Top 50, Mercer Mettl 2025</strong><br>
+      Python · React · Flask · ChromaDB · Mistral AI
+    </div>
+    <a class="go" href="https://github.com/Mayurij81/FinanceBot" target="_blank" rel="noopener noreferrer">View code →</a>
+  </article>
+
+  <article class="card">
+    <span class="num mono">05</span>
+    <h3 class="serif">Department of Justice Chatbot</h3>
+    <p>Multilingual chatbot with conversational memory for the Department of Justice of India website, built as team lead.</p>
+    <div class="meta">
+      <strong>SIH 2024 Grand Finalist</strong><br>
+      Python · Llama 3.1 · Streamlit
+    </div>
+    <a class="go" href="https://github.com/JustCause2307/nyayasetu" target="_blank" rel="noopener noreferrer">View code →</a>
+  </article>
+
+</div>
+<section id="experience"><div class="wrap row">
+<div class="label mono">Experience</div>
+<div>
+<div class="job serif"><div>Full Stack Intern, Ai Unika</div><span class="mono">Jun – Dec 2025</span></div>
+<ul>
+<li>Built and shipped full-stack features for multiple client-facing web products using Next.js, React and MongoDB.</li>
+<li>Integrated third-party and internal APIs and developed interactive UI components, product walkthroughs and user workflows.</li>
+<li>Implemented Mapbox-based interactive maps with dynamic layers and real-time plotting.</li>
+</ul></div></div>
+<div class="wrap row" style="margin-top:60px">
+<div class="label mono">Recognition</div>
+<ul class="honors">
+<li>Top 50, Mercer Mettl Hackathon <small class="mono">2025</small></li>
+<li>Grand Finalist, Smart India Hackathon (Team Lead) <small class="mono">2024</small></li>
+<li>Semi-Finalist, Thales GenTech India Hackathon <small class="mono">2024</small></li>
+<li>Top 5 of 60 teams, CCOEW, Pune <small class="mono">2025</small></li>
+</ul></div>
+<div class="wrap row skills" style="margin-top:60px">
+<div class="label mono">Toolbox</div>
+<div>
+<p><b>Languages</b>C/C++, Java, Python, JavaScript, TypeScript, Kotlin</p>
+<p><b>Web &amp; backend</b>React, Next.js, Flask, FastAPI, Streamlit</p>
+<p><b>AI / ML</b>Generative AI, LLMs, RAG, ChromaDB</p>
+<p><b>Data &amp; tools</b>MongoDB, PostgreSQL, Git &amp; GitHub, Docker</p>
+</div></div></section>
+
+<section id="contact"><div class="wrap row">
+<div class="label mono">Contact</div>
+<div>
+<h2 class="serif">Let’s build something useful, and good for the planet.</h2>
+<a class="big serif" href="mailto:mayurij0306@gmail.com">mayurij0306@gmail.com</a>
+<p class="links" style="margin-top:28px"><a href="https://www.linkedin.com/in/mayuri-jadhav-217552317/">LinkedIn</a><a href="https://github.com/Mayurij81">GitHub</a><a href="https://leetcode.com/u/mayurij0801/">LeetCode</a></p>
+</div></div></section>
+<footer><div class="wrap">© <span id="y"></span> Mayuri Jadhav</div></footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){
+var c=document.getElementById('ridge'),x=c.getContext('2d'),W,H,mx=-999,my=-999,t=0,bg,ink,acc;
+var still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function colors(){var s=getComputedStyle(document.documentElement);bg=s.getPropertyValue('--bg').trim();ink=s.getPropertyValue('--ink').trim();acc=s.getPropertyValue('--accent').trim()}
+function size(){var r=c.getBoundingClientRect(),d=window.devicePixelRatio||1;W=r.width;H=r.height;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0)}
+function h(px,i,n){
+var e=Math.exp(-Math.pow((px/W-.62)*2.2,2));
+var w=Math.sin(px*.011+t*.5+i*.4)*.55+Math.sin(px*.027-t*.8+i*.9)*.3+Math.sin(px*.005+t*.2)*.4;
+return (w+1.2)*e*(H*.07)}
+function draw(){
+x.clearRect(0,0,W,H);
+var n=26,gap=Math.max(14,H*.022),top=H*.5;
+for(var i=0;i<n;i++){
+var by=top+i*gap;
+x.beginPath();x.moveTo(0,by);
+for(var px=0;px<=W;px+=8){
+var dm=Math.abs(px-mx),dy=Math.abs(by-my),bump=0;
+if(dm<150&&dy<150)bump=(1-Math.sqrt(dm*dm+dy*dy)/212)*40;
+x.lineTo(px,by-h(px,i,n)-Math.max(0,bump))}
+x.lineTo(W,by+H);x.lineTo(0,by+H);x.closePath();
+x.fillStyle=bg;x.fill();
+x.strokeStyle=(i%7===3)?acc:ink;x.globalAlpha=(i%7===3)?.9:.22;x.lineWidth=1.2;
+x.beginPath();x.moveTo(0,by);
+for(var q=0;q<=W;q+=8){
+var dm2=Math.abs(q-mx),dy2=Math.abs(by-my),b2=0;
+if(dm2<150&&dy2<150)b2=(1-Math.sqrt(dm2*dm2+dy2*dy2)/212)*40;
+x.lineTo(q,by-h(q,i,n)-Math.max(0,b2))}
+x.stroke();x.globalAlpha=1}
+t+=.012;if(!still)requestAnimationFrame(draw)}
+colors();size();matchMedia('(prefers-color-scheme:light)').addEventListener('change',function(){colors();if(still)draw()});
+addEventListener('resize',function(){size();if(still)draw()});
+c.parentElement.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top});
+c.parentElement.addEventListener('pointerleave',function(){mx=my=-999});
+draw();
+})();
+</script>
+</body>
+</html>
